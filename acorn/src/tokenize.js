@@ -276,6 +276,10 @@ pp.readToken_lt_gt = function(code) { // '<>'
     this.skipSpace()
     return this.nextToken()
   }
+  if (next === 45 && code === 60) {
+    // <- channel processing
+    return this.finishOp(tt.channel, 2)
+  }
   if (next === 61) size = 2
   return this.finishOp(tt.relational, size)
 }

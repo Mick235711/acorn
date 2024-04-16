@@ -106,6 +106,7 @@ export const types = {
   relational: binop("</>/<=/>=", 7),
   bitShift: binop("<</>>/>>>", 8),
   plusMin: new TokenType("+/-", {beforeExpr: true, binop: 9, prefix: true, startsExpr: true}),
+  channel: new TokenType("<-", {beforeExpr: true, binop: 9, prefix: true, startsExpr: true}),
   modulo: binop("%", 10),
   star: binop("*", 10),
   slash: binop("/", 10),

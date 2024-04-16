@@ -214,7 +214,7 @@ export interface UnaryExpression extends Node {
   argument: Expression
 }
 
-export type UnaryOperator = "-" | "+" | "!" | "~" | "typeof" | "void" | "delete"
+export type UnaryOperator = "-" | "+" | "!" | "~" | "<-" | "typeof" | "void" | "delete"
 
 export interface UpdateExpression extends Node {
   type: "UpdateExpression"
@@ -232,7 +232,7 @@ export interface BinaryExpression extends Node {
   right: Expression
 }
 
-export type BinaryOperator = "==" | "!=" | "===" | "!==" | "<" | "<=" | ">" | ">=" | "<<" | ">>" | ">>>" | "+" | "-" | "*" | "/" | "%" | "|" | "^" | "&" | "in" | "instanceof" | "**"
+export type BinaryOperator = "==" | "!=" | "===" | "!==" | "<-" | "<" | "<=" | ">" | ">=" | "<<" | ">>" | ">>>" | "+" | "-" | "*" | "/" | "%" | "|" | "^" | "&" | "in" | "instanceof" | "**"
 
 export interface AssignmentExpression extends Node {
   type: "AssignmentExpression"
