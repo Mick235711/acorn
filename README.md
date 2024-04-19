@@ -1,3 +1,15 @@
+# Abdulelah & Yihe's CS4215 Term Project Repository
+
+This is the repository that contains the optional grammar part of our CS4215 Term Project,
+a modification on Source 3 Concurrency to add some Go concurrency features, including:
+- `go` for thread creation
+- Channel syntax `<-` (requires inclusion of this repository)
+- Modifying the underlying VM such that the program terminates if the main thread terminates
+
+To build our fork, please refer to the instructions in the [main repository](https://github.com/AAlghrairy/go-slang).
+
+The original README follows.
+
 # Acorn
 
 [![Build Status](https://github.com/acornjs/acorn/workflows/ci/badge.svg)](https://github.com/acornjs/acorn/actions)
